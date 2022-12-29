@@ -1,0 +1,158 @@
+.skip-link {
+  position: absolute;
+  top: -51px;
+  left: 0;
+  padding: 8px;
+  background-color: #bf1722;
+  color: white;
+  z-index: 1;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+img {
+    display: block;
+  }
+  
+  .header {
+    min-height: 56px;
+    transition: min-height 0.3s;
+    background-color: #665A48;
+  }
+
+  .header > span {
+    color: #EDE4E0;
+  }
+  
+  .header__inner {
+    width: 100%;
+    min-height: 200px;
+    background-color: aqua;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header__title {
+    font-weight: 300;
+    font-size: 4em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+    color: #EDE4E0;
+  }
+  
+  .header__menu {
+    display: none;
+  }
+  
+  .nav {
+    width: 100%;
+    background-color: #665A48;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+  }
+  
+  .title {
+    text-align: left;
+    padding: 16px;
+    color: #EDE4E0;
+  }
+  
+  .nav__list {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    text-align: end;
+  }
+  
+  .nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  
+  .nav a {
+    display: inline-block;
+    padding: 1.3em;
+    text-decoration: none;
+    color: #EDE4E0;
+  }
+  
+  .nav a:hover {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  @media screen and (max-width: 499px) {
+    .header__menu {
+      font-size: 32px;
+      width: 100%;
+      min-height: 44px;
+      min-width: 44px;
+      flex-direction: row;
+      padding: 16px 16px;
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 100%;
+    }
+
+    .header__menu > h5 {
+      color: #EDE4E0;
+      min-height: 44px;
+      min-width: 44px;
+    }
+    .burger{
+      text-align: end;
+      color: #EDE4E0;
+    }
+    .title{
+      display: none;
+    }
+  }
+  
+
+  @media screen and (max-width: 499px) {
+    .nav {
+      z-index: 10;
+      background-color: #C8DBBE;
+      width: 100%;
+      position: absolute;
+      
+      /* This trasform moves the drawer off canvas. */
+      -webkit-transform: translate(-500px, 0);
+      transform: translate(-500px, 0);
+      /* Optionally, we animate the drawer. */
+      transition: transform 0.3s ease;
+    }
+  
+    .open {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  
+    .nav__item {
+      display: list-item;
+      border-bottom: 1px solid #E0E0E0;
+      width: 100%;
+      text-align: left;
+    }
+
+    .nav a {
+      color: #665A48;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .nav__list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }

@@ -1,0 +1,290 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #424242;
+}
+
+main {
+  margin: 20px;
+  padding: 20px;
+}
+img {
+  display: block;
+}
+
+.list{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.line{
+  height: 2px;
+  width: 400px;
+  background-color: gray;
+  margin: 10px auto;
+  padding: auto;
+}
+
+
+
+.item-col {
+  display: grid;
+  grid-template-columns: 34% 34% 33%;
+  grid-template-rows: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1199px) {
+  .item-col {
+    grid-template-columns: 50% 50%;
+  }
+  
+}
+
+@media screen and (max-width: 499px) {
+  .line{
+    font-size: 14px;
+    width : 70%;
+    /* display: none; */
+  }
+  .item-col {
+    grid-template-columns: 100%;
+  }
+}
+
+
+footer {
+  background-color: #424242;
+  min-height: 56px;
+  display: block;
+  color: white;
+  padding: 16px;
+  text-align: end;
+}
+
+
+// list
+
+:host {
+  display: block;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.fan-art-item {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+.item-row{
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+  padding: auto;
+}
+.item-info {
+  padding: 24px 0px;
+}
+.item-info > h2 {
+  font-weight: lighter;
+  margin-top: 10px;
+  font-weight: 700;
+  min-height: 44px;
+  min-width: 44px;
+}
+.item-info > p {
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10; /* number of lines to show */
+}
+
+.city-item {
+  position: relative;
+  bottom: 22px;
+  padding: 10px 30px;
+  font-weight: 700;
+  background-color: #C8DBBE;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* .item-info > span {
+  padding-bottom: 100px;
+} */
+@media screen and (max-width: 1199px) {
+  .item-row{
+    width: 100%;
+    padding: 10px;
+    /* display: none; */
+  }
+
+  .fan-art-item {
+    width: 100%;
+    text-align: center;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+// list item
+
+/* movie item */
+
+.item-item {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-item__header {
+  position: relative;
+}
+
+.item-item .item-item__header .item-item__header__poster {
+  width: 100%;
+}
+
+.item-item .item-item__header .item-item__header__rating {
+  position: absolute;
+  padding: 8px;
+  bottom: 20px;
+  left: 0;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+.item-item .item-item__header .item-item__header__rating .item-item__header__rating__score {
+  margin-left: 16px;
+}
+
+.item-item .item-item__content {
+  padding: 16px;
+}
+
+.item-item .item-item__content h3 {
+  margin: 0 0 10px 0;
+}
+
+.item-item .item-item__content h3 a {
+  color: #db0000;
+  text-decoration: none;
+}
+
+.item-item .item-item__content p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* item */
+
+.item {
+  margin : 0 auto;
+  width: 100%;
+  max-width: 800px;
+  // display: grid;
+  // grid-template-columns: 1fr;
+  // gap: 18px 16px;
+}
+
+.item .item__poster {
+  width: 100%;
+  // max-width: 400px;
+}
+
+.item .item__info {
+  margin-top: 20px;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+.review {
+  margin-top: 30px;
+  .item-review {
+    .item__name {
+      font-weight: 700;
+    }
+    .item__review_date {
+      color: #CCCCCC;
+    }
+  }
+}
+
+.title-review{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.item__title {
+  padding: 10px;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.item-info > h2 > a {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 12px;
+}
+
+@media screen and (min-width: 650px){
+  .item {
+    grid-template-columns: auto 1fr;
+  }
+  .item .item__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+}
+
+
+/*
+  Like
+*/
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+ 
+
