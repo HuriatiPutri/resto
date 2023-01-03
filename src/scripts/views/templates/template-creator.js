@@ -30,9 +30,6 @@ const createDetailTemplate = (item) => `
       <h3>Description</h3>
       <p>${item.description}</p>
     </div>
-    <div>
-    <h4 class="title-review">Customer Review</h4>
-    </div>
 `;
 
 const createDetailFavTemplate = (item) => `
@@ -54,7 +51,7 @@ const createDetailFavTemplate = (item) => `
 
 const createListRestaurant = (item) => ` <div class="item-row">
   <div class="img-item">
-    <img tabindex="0" class="lazyload fan-art-item" weight="100%" height="auto" data-src="${item.pictureId ? CONFIG.BASE_IMAGE_URL + item.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="Fan Art">
+    <img tabindex="0" class="lazyload fan-art-item" width="1280" height="750" data-src="${item.pictureId ? CONFIG.BASE_IMAGE_URL + item.pictureId : 'https://picsum.photos/id/666/800/450?grayscale'}" alt="Fan Art">
     <span tabindex="0" class="city-item">${item.city}</span>
   </div>
   <div class="item-info">

@@ -10,8 +10,9 @@ const DetailRestaurant = {
     <div id="item" class="item"></div>
     <div id="likeButtonContainer"></div>
     <div class="review">
-    <div id="review" class="item">
-    </div>
+      <div id="review" class="item">
+        <h2 class="title-review">Customer Review</h2>
+      </div>
     </div>
     `;
   },

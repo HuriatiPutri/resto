@@ -30,7 +30,7 @@ describe('Liking a resto', () => {
     expect(document.querySelector('[aria-label="unlike this resto"]'))
       .toBeFalsy();
   });
-  it('should be able to like the movie', async () => {
+  it('should be able to like the resto', async () => {
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       resto: {

@@ -11,7 +11,7 @@ class AppBar extends HTMLElement {
         <a href="#maincontent" class="skip-link">Skip To Content</a>
         <div class="header__menu">
         <h5>Resto Awak</h5>
-        <a href="#" id="menu" class="burger" tabindex="0">☰</a>
+        <button id="menu" class="burger" tabindex="0">☰</button>
         </div>
         <nav id="drawer" class="nav">
           <h2 class="title">Resto Awak</h2>
