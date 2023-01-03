@@ -1,7 +1,7 @@
 import LikeButtonInitiator from '../src/scripts/utils/like-button-initiator';
 import FavoriteRestoIdb from '../src/scripts/data/favorite-resto-idb';
 
-describe('Unliking A Movie', () => {
+describe('Unliking A resto', () => {
   const addLikeButtonContainer = () => {
     document.body.innerHTML = '<div id="likeButtonContainer"></div>';
   };

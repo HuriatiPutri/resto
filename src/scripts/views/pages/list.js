@@ -8,7 +8,6 @@ const ListRestaurant = {
     return `
     <div class="content">
         <h2 class="content__heading">Explore Restaurant</h2>
-        <div>Loading...</div>
         <div id="data-list" class="item-col">
         </div>
       </div>
